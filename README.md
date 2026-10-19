@@ -31,5 +31,5 @@ brew install --cask lipanre/tap/yaak
 - 类型：macOS 桌面应用（Apple Silicon / Intel）
 - 当前构建：[`main-build-2`](https://github.com/lipanre/yaak/releases/tag/main-build-2)
 
-该构建由项目的 `main` 分支自动生成，未使用 Apple 开发者证书签名或公证。如果 macOS
-阻止应用打开，请在“系统设置 → 隐私与安全性”中允许运行。
+该构建由项目的 `main` 分支自动生成，使用 ad-hoc 签名且未经过 Apple 公证。安装 Cask
+时会自动移除 quarantine 属性，避免 macOS 将其误报为“已损坏”。

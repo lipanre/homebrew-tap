@@ -18,6 +18,13 @@ cask "yaak" do
 
   app "Yaak.app"
 
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:         ["-dr", "com.apple.quarantine", "{{appdir}}/Yaak.app"],
+        must_succeed: false,
+        print_stderr: false
+  end
+
   zap trash: [
     "~/Library/Application Support/app.yaak.desktop",
     "~/Library/Caches/app.yaak.desktop",
@@ -27,7 +34,7 @@ cask "yaak" do
   ]
 
   caveats <<~EOS
-    This Yaak build is not signed or notarized by Apple.
-    If macOS prevents it from opening, allow it in System Settings > Privacy & Security.
+    This Yaak build is ad-hoc signed and not notarized by Apple.
+    The cask removes the quarantine attribute during installation.
   EOS
 end
