@@ -46,9 +46,24 @@ brew install --cask lipanre/tap/capcap
 该构建使用 ad-hoc 签名且未经过 Apple 公证，安装 Cask 时会自动移除 quarantine 属性。
 首次截图时，请按提示授予“屏幕录制”和“辅助功能”权限。
 
+### Tiny RDM
+
+```bash
+brew install --cask lipanre/tap/tiny-rdm
+```
+
+- 项目：[tiny-craft/tiny-rdm](https://github.com/tiny-craft/tiny-rdm)
+- 官网：[tinyrdm.com](https://tinyrdm.com/)
+- 类型：Redis 桌面管理工具（Apple Silicon / Intel）
+- 系统要求：macOS 11+
+- 当前版本：[`v1.2.7`](https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7)
+
+该构建使用 ad-hoc 签名且未经过 Apple 公证，安装 Cask 时会自动移除 quarantine 属性。
+
 ## 更新
 
 ```bash
 brew upgrade --cask lipanre/tap/yaak
 brew upgrade --cask lipanre/tap/capcap
+brew upgrade --cask lipanre/tap/tiny-rdm
 ```
