@@ -60,10 +60,25 @@ brew install --cask lipanre/tap/tiny-rdm
 
 该构建使用 ad-hoc 签名且未经过 Apple 公证，安装 Cask 时会自动移除 quarantine 属性。
 
+### Purge
+
+```bash
+brew install --cask lipanre/tap/purge
+```
+
+- 项目：[jithin-sabu/purge-app](https://github.com/jithin-sabu/purge-app)
+- 官网：[purgemac.com](https://purgemac.com/)
+- 类型：macOS 清理工具（Universal）
+- 系统要求：macOS 13+
+- 当前版本：[`v1.12.0`](https://github.com/jithin-sabu/purge-app/releases/tag/v1.12.0)
+
+Purge 会将清理项目默认移入“废纸篓”，并支持通过 Sparkle 自动更新。
+
 ## 更新
 
 ```bash
 brew upgrade --cask lipanre/tap/yaak
 brew upgrade --cask lipanre/tap/capcap
 brew upgrade --cask lipanre/tap/tiny-rdm
+brew upgrade --cask lipanre/tap/purge
 ```
