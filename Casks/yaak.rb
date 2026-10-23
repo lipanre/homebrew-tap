@@ -2,8 +2,8 @@ cask "yaak" do
   arch arm: "aarch64", intel: "x64"
 
   version "1.0.1,v1.0.1"
-  sha256 arm:   "5bc5a3275d9df93a0b99ffaee93c71fa70052bff3e5df0ddd602610ba10295e5",
-         intel: "5d86c42b305ea5d83486d58238af04272f37c29f42c1c7c681673e3c4c8ae6ba"
+  sha256 arm:   "4ce834f5b99d8197dfd9cbc591dec9b0f948fbc154ed28d3e33b10b2e90bc75a",
+         intel: "28897b30ba5117b4bb62745b55fc08e2d66d48822608f8ac72acac28f57aeb4d"
 
   url "https://github.com/lipanre/yaak/releases/download/#{version.csv.second}/Yaak_#{version.csv.first}_#{arch}.dmg"
   name "Yaak"
