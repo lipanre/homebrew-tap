@@ -1,7 +1,7 @@
 cask "yaak" do
   arch arm: "aarch64", intel: "x64"
 
-  version "1.0.0,main-build-2"
+  version "1.0.1,v1.0.1"
   sha256 arm:   "5bc5a3275d9df93a0b99ffaee93c71fa70052bff3e5df0ddd602610ba10295e5",
          intel: "5d86c42b305ea5d83486d58238af04272f37c29f42c1c7c681673e3c4c8ae6ba"
 
